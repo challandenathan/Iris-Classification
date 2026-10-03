@@ -4,4 +4,4 @@ kaggle
 kagglehub>= 0.4.1
 pandas >= 3.0
 scikit-learn >= 1.8
-#api = KGAT_87619111555b481247e95ae3783cfd45#
+ipykernel
