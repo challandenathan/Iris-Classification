@@ -1,11 +1,11 @@
 import pandas as pd 
 from sklearn.linear_model import LogisticRegression 
-train_df = pd.read_csv('train(2).csv')
+train_df = pd.read_csv('data/train(2).csv')
 X_train = train_df.drop(columns=['id','target'])
 Y_train = train_df['target']
 clf = LogisticRegression(random_state = 0,verbose=1)
 clf.fit(X_train,Y_train)
-test_df = pd.read_csv('test(3).csv')
+test_df = pd.read_csv('data/test(3).csv')
 predictions = clf.predict(test_df.drop(columns=['id']))
 #the number of steps for the function minimization
 print("number of iteration:",clf.n_iter_)
